@@ -1,17 +1,16 @@
 # Singleton service factory configuration/IoC injection
+
 singletons:
 - com.networknt.registry.URL:
   - com.networknt.registry.URLImpl:
-      protocol: light
+      protocol: https
       host: localhost
       port: 8080
-      path: consul
+      path: direct
       parameters:
-        registryRetryPeriod: '30000'
-- com.networknt.consul.client.ConsulClient:
-  - com.networknt.consul.client.ConsulClientImpl
+        com.networknt.portal.hybrid.query-1.0.0: http://localhost:8080?environment=dev
 - com.networknt.registry.Registry:
-  - com.networknt.consul.ConsulRegistry
+  - com.networknt.registry.support.DirectRegistry
 - com.networknt.balance.LoadBalance:
   - com.networknt.balance.RoundRobinLoadBalance
 - com.networknt.cluster.Cluster:
