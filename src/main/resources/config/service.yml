@@ -1,5 +1,4 @@
 # Singleton service factory configuration/IoC injection
-
 singletons:
 - com.networknt.registry.URL:
   - com.networknt.registry.URLImpl:
@@ -19,6 +18,9 @@ singletons:
 - com.networknt.server.StartupHookProvider:
   # registry all service handlers by from annotations
   - com.networknt.rpc.router.RpcStartupHookProvider
+  # - com.networknt.jaeger.tracing.JaegerStartupHookProvider
+  # If you are using mask module to remove sensitive info before logging, uncomment the following line.
+  # - com.networknt.server.JsonPathStartupHookProvider
   # Kafka producer hook
   - net.lightapi.portal.command.HybridCommandStartup
 # ShutdownHookProvider implementations, there are one to many and they are called in the same sequence defined.
