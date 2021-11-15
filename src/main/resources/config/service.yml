@@ -15,9 +15,6 @@ singletons:
   - com.networknt.balance.RoundRobinLoadBalance
 - com.networknt.cluster.Cluster:
   - com.networknt.cluster.LightCluster
-# HandlerProvider implementation
-- com.networknt.handler.HandlerProvider:
-  - com.networknt.rpc.router.RpcRouter
 # StartupHookProvider implementations, there are one to many and they are called in the same sequence defined.
 - com.networknt.server.StartupHookProvider:
   # registry all service handlers by from annotations
@@ -30,3 +27,6 @@ singletons:
 # Kafka Producer instance
 - com.networknt.kafka.producer.NativeLightProducer:
   - com.networknt.kafka.producer.SidecarProducer
+# Schema registry client
+- io.confluent.kafka.schemaregistry.client.SchemaRegistryClient:
+  - com.networknt.kafka.common.LightSchemaRegistryClient
