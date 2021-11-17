@@ -29,6 +29,6 @@ singletons:
 # Kafka Producer instance
 - com.networknt.kafka.producer.NativeLightProducer:
   - com.networknt.kafka.producer.SidecarProducer
-# Schema registry client
+# Schema Registry client implementation
 - io.confluent.kafka.schemaregistry.client.SchemaRegistryClient:
   - com.networknt.kafka.common.LightSchemaRegistryClient
