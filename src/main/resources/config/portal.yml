@@ -20,11 +20,11 @@ dataPath: ${portal.dataPath:/data}
 # Kafka Streams User application.id which is the consumer group.id
 userApplicationId: ${portal.userApplicationId:user}
 # Kafka Streams User application portal-userid topic.
-userIdTopic: ${portal.userIdTpoic:portal-userid}
+userIdTopic: ${portal.userIdTopic:portal-userid}
 # Kafka Streams User application portal-taiji topic
-taijiTopic: ${portal.taijiTpoic:portal-taiji}
+taijiTopic: ${portal.taijiTopic:portal-taiji}
 # Kafka Streams User application portal-reference topic
-referenceTopic: ${portal.referenceTpoic:portal-reference}
+referenceTopic: ${portal.referenceTopic:portal-reference}
 
 # Notification Streams
 # Kafka Streams Notification application.id which is the consumer group.id
