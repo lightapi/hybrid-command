@@ -15,9 +15,17 @@ portalHost: ${portal.portalHost:https://localhost:3000}
 admin: ${portal.admin:stevehu@gmail.com}
 # Portal data folder for contents that are not suitable for Kafka
 dataPath: ${portal.dataPath:/data}
+
 # User Streams
 # Kafka Streams User application.id which is the consumer group.id
 userApplicationId: ${portal.userApplicationId:user}
+# Kafka Streams User application portal-userid topic.
+userIdTopic: ${portal.userIdTpoic:portal-userid}
+# Kafka Streams User application portal-taiji topic
+taijiTopic: ${portal.taijiTpoic:portal-taiji}
+# Kafka Streams User application portal-reference topic
+referenceTopic: ${portal.referenceTpoic:portal-reference}
+
 # Notification Streams
 # Kafka Streams Notification application.id which is the consumer group.id
 notificationApplicationId: ${portal.notificationApplicationId:notification}
