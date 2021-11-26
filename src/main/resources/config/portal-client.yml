@@ -1,0 +1,15 @@
+
+# Indicate id portal service will be service url or not, if it is false, the portal service call will use service discovery.
+portalByServiceUrl: ${portal-client.portalByServiceUrl:false}
+# portal query service url.portal-client.portalByServiceUrl:false
+portalQueryServiceUrl: ${portal-client.portalQueryServiceUrl:-}
+# portal command service url.
+portalCommandServiceUrl: ${portal-client.portalCommandServiceUrl:-}
+
+# portal query service Id.
+portalQueryServiceId: ${portal-client.portalQueryServiceId:com.networknt.portal.hybrid.query-1.0.0}
+# portal command service Id.
+portalCommandServiceId: ${portal-client.portalCommandServiceId:com.networknt.portal.hybrid.command-1.0.0}
+
+# portal reference service Id.
+portalReferenceServiceId: ${portal-client.portalReferenceServiceId:com.networknt.reference-1.0.0}
