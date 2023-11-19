@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.1.29](https://github.com/networknt/hybrid-command/tree/2.1.29) (2023-11-19)
+
+
+**Merged pull requests:**
+
+
+- fixes \#34 add addDefaultImplementationEntries to maven jar plugin [\#35](https://github.com/lightapi/hybrid-command/pull/35) ([stevehu](https://github.com/stevehu))
 ## [2.1.28](https://github.com/networknt/hybrid-command/tree/2.1.28) (2023-10-24)
 
 
