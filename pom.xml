@@ -265,7 +265,7 @@
             <version>${version.junit}</version>
             <scope>test</scope>
         </dependency>
-        
+
     </dependencies>
 
     <build>

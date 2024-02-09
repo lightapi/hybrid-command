@@ -1,6 +1,6 @@
 # Light Portal Hybrid Command Server
 
-This is a light-hybrid-4j server for light portal command side services. All comamnd side portal 
+This is a light-hybrid-4j server for light portal command side services. All comamnd side portal
 services should be deployed on this server.
 
 
@@ -37,4 +37,3 @@ java -cp ./service/*;target/eventuate-command-1.4.6.jar com.networknt.server.Ser
 ## Docker
 run docker-compose -f docker-compose-service.yml up from light-eventuate-4j root folder
   -- it will build and run the Dockerfile under command module
-  
