@@ -8,6 +8,8 @@
 
 - [pre-commit.ci] pre-commit autoupdate [\#40](https://github.com/lightapi/hybrid-command/pull/40) ([pre-commit-ci](https://github.com/apps/pre-commit-ci))
 - fixes \#38 add pre-commit hook and apply it [\#39](https://github.com/lightapi/hybrid-command/pull/39) ([stevehu](https://github.com/stevehu))
+
+
 ## [2.1.31](https://github.com/networknt/hybrid-command/tree/2.1.31) (2024-01-16)
 
 
