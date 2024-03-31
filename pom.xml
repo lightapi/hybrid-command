@@ -164,11 +164,6 @@
         </dependency>
         <dependency>
             <groupId>com.networknt</groupId>
-            <artifactId>jaeger-tracing</artifactId>
-            <version>${version.light-4j}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.networknt</groupId>
             <artifactId>email-sender</artifactId>
             <version>${version.light-4j}</version>
         </dependency>
