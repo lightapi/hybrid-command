@@ -12,7 +12,7 @@ resetHost: ${portal.resetHost:https://localhost:3000}
 # The host for the portal. This is usually the portal view site.
 portalHost: ${portal.portalHost:https://localhost:3000}
 # Admin user email for the bootstrap
-admin: ${portal.admin:stevehu@gmail.com}
+admin: ${portal.admin:steve.hu@lightapi.net}
 # Portal data folder for contents that are not suitable for Kafka
 dataPath: ${portal.dataPath:/data}
 
