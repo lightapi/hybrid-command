@@ -2,7 +2,7 @@
 
 set -ex
 
-VERSION=$1
+VERSION=""  # Initialize VERSION as empty
 IMAGE_NAME="networknt/portal-hybrid-command"
 LOCAL_BUILD=false # Flag to track local build
 
@@ -17,6 +17,7 @@ showHelp() {
     echo " "
     echo "    example: ./build.sh 0.0.1"
     echo "    example: ./build.sh 0.0.1 -l"
+    echo "    example: ./build.sh -l 0.0.1"
     echo " "
 }
 
@@ -49,27 +50,31 @@ publish() {
     fi
 }
 
-# Parse command-line arguments
+# Parse command-line arguments in any order
 while [[ $# -gt 0 ]]; do
-  case "$1" in
-    -l|--local)
-      LOCAL_BUILD=true
-      shift
-      ;;
-    *)
-      if [ -z "$VERSION" ]; then
-        VERSION="$1"
-      else
-        showHelp "Invalid option: $1"
-        exit 1
-      fi
-      shift
-      ;;
-  esac
+    case "$1" in
+        -l|--local)
+          LOCAL_BUILD=true
+          shift
+          ;;
+        -*)  # Catch any other argument starting with -
+          showHelp "Invalid option: $1"
+          exit 1
+          ;;
+        *)
+            if [[ -z "$VERSION" ]]; then
+                VERSION="$1"  # Assign to VERSION if VERSION is not set yet
+            else
+              showHelp "Invalid option: $1" # error if VERSION is set already
+              exit 1
+            fi
+            shift # Remove the processed argument
+            ;;
+    esac
 done
 
-
-if [ -z "$VERSION" ]; then
+# Check if VERSION is empty after parsing
+if [[ -z "$VERSION" ]]; then
     showHelp "[VERSION] parameter is missing"
     exit 1
 fi
