@@ -1,5 +1,14 @@
 # Change Log
 
+## [2.2.0](https://github.com/networknt/hybrid-command/tree/2.2.0) (2025-02-11)
+
+
+**Merged pull requests:**
+
+
+- fixes \#45 change the portal.yml to update the portal.admin [\#46](https://github.com/lightapi/hybrid-command/pull/46) ([stevehu](https://github.com/stevehu))
+
+
 ## [2.1.37](https://github.com/networknt/hybrid-command/tree/2.1.37) (2024-09-20)
 
 
