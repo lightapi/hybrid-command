@@ -7,6 +7,8 @@
 
 
 - [pre-commit.ci] pre-commit autoupdate [\#55](https://github.com/lightapi/hybrid-command/pull/55) ([pre-commit-ci](https://github.com/apps/pre-commit-ci))
+
+
 ## [2.3.0](https://github.com/networknt/hybrid-command/tree/2.3.0) (2025-06-25)
 
 
